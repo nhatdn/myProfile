@@ -1,0 +1,326 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wapper {
+    height: 100%;
+}
+/* ---- HEAD ----*/
+.container-header {
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #242526;
+    align-items: center;
+    border-bottom: 1px solid #434343;
+    padding: 0px 16px;
+    z-index: 1000000;
+}
+* {
+    box-sizing: border-box;
+}
+/*logo-and-research*/
+        /*logo*/
+
+.logo a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.logo a img {
+    
+    width: 40px;
+    height: 40px;
+}
+.logo-and-research {
+    display: flex;
+    flex-basis: 360px;
+    
+}
+        /*research*/
+.research {
+    margin-left: 5px;
+}
+.research input {
+    outline: none;
+    border: none;  
+    width: 240px;
+    height: 40px;
+    background-color: #3A3B3C;
+    border-radius: 50px;
+    line-height: 40px;
+    padding: 0px 20px;
+    color: white;
+}
+.list-functions {
+    flex-basis: 555px;
+    height: 57px;
+}
+.list-functions .container-functions {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-functions li {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 4px;
+    
+}
+.container-functions li a{
+    font-weight: normal;
+    color: #cecece;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.container-functions li.active {
+    border-bottom: 3px solid #2D88FF;
+}
+.container-functions li.active a span{
+    color : #2D88FF;
+}
+.container-functions li:not(.active) a:hover {
+    background-color: #3A3B3C;
+    border-radius: 5px;
+}
+.container-functions li a span:first-child {
+    display: none;
+}
+.container-functions li a span {
+    font-size: 22px;
+}
+.my-messages-and-notifications .infor-my-msg-and-notify {
+    display: flex;
+    flex-basis: 316px;
+    height: 40px;
+}
+.infor-my-msg-and-notify li:first-child div {
+    
+    width: 104px;
+    height: 100%;
+}
+.infor-my-msg-and-notify li div a {
+    color: #cecece;
+}
+
+.infor-my-msg-and-notify li .profile a {
+    height: 100%;
+    padding: 0px 7px;
+    display: block;
+    line-height: 40px;
+}
+.profile a span {
+    display: inline-block;
+}
+.profile a span:last-child {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    float: right;
+    color : #2D88FF;
+}
+.profile a span::first-child {
+    border-radius: 50%;
+}
+.profile a span img {
+    margin-top: 6px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.infor-my-msg-and-notify li {
+    margin: 0px 4px;
+}
+.create, 
+.messenger, 
+.notification, 
+.account {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.create a , 
+.messenger a , 
+.notification a , 
+.account a {
+background-color: #3A3B3C;
+border-radius: 50%;
+display: block;
+height: 40px;
+}
+.infor-my-msg-and-notify li .profile a:hover {
+    border-radius: 40px;
+    background-color: #3A3B3C;
+}
+.create a:hover , 
+.messenger a:hover , 
+.notification a:hover , 
+.account a:hover {
+    background-color: #565758;
+}
+.container-body-content {
+    padding-top: 56px;
+}
+.my-background {
+    height: 467px;
+    width: 100%;
+    
+}
+.my-background {
+    
+    position: absolute;
+    z-index: 1000;
+}
+.my-background img {
+    height: 100px;
+}
+/* container-body-content */
+.container-image-cover {
+    display: block;
+
+}
+.meaning-tag {
+    display: none;
+}
+.cover-img {
+    margin: 0px auto;
+    height: 348px;
+    width: 940px;
+    overflow: hidden;
+    background-color: darkgray;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.cover-img img {
+    width: 100%;
+    margin-top: -20%;
+}
+.show-avatar {
+    width: 168px;
+    height: 168px;
+    overflow: hidden;
+    background-color: darkgray;
+    border-radius: 50%;
+}
+
+.show-avatar img {
+    width: 100%;
+    margin-top: -10%;
+}
+.border-radius-for-avatar {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    background-color:#3A3B3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 245px;
+    left: calc(100vw / 2 - 88px);
+    
+}
+.my-cover-image {
+    background-image: linear-gradient( transparent, #242526);
+}
+.my-background-images {
+    background-image: url("../img/background-cover.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.my-description {
+    background-color: #242526;
+    
+}
+.my-description {
+    padding-top: 25px;
+    text-align: center;
+}
+.my-description .my-name {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color : rgb(240, 240, 240);
+    
+}
+.my-description .my-name span {
+    font-weight: normal;
+    color : rgb(190, 190, 190);
+}
+.my-description .description-detail {
+    
+    font-size: 18px;
+    color : rgb(190, 190, 190);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+.name-and-description  {
+    padding-bottom: 20px;
+    width: 876px;
+    margin: 0px auto;
+    border-bottom: 1px solid #565758;
+}
+.container-list-menu {
+    background-color: #242526;
+}
+.list-my-menu {
+    width: 908px;
+    height: 60px;
+    margin: 0px auto;
+}
+.comprise-menu {
+    height: 100%;
+    padding: 0px 10px;
+}
