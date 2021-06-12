@@ -545,17 +545,25 @@ h2 a:hover {
 .container-my-status .post-new-status {
     height: 123px;
 }
-.container-input-status {
+.container-input-status,
+.my-infor-in-this-tatus {
     display: flex;
-    padding: 10px 0px;
-    margin: 0px 15px;
 }
-.container-input-status .my-avatar-in-status {
-    width: 40px;
+.container-input-status .my-avatar-in-status,
+.my-infor-in-this-tatus .my-avt {
+    min-width: 40px;
     height: 40px;
     margin-right: 15px;
+    max-width: 40px;
 }
-.container-input-status .my-avatar-in-status img{
+.container-input-status .my-avatar-in-status a,
+.my-infor-in-this-tatus .my-avt a {
+    display: block;
+    max-height: 40px;
+    min-height: 40px;
+}
+.container-input-status .my-avatar-in-status img,
+.my-infor-in-this-tatus .my-avt img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -605,4 +613,115 @@ h2 a:hover {
 .container-tool-post-data .option a i {
     padding-right: 5px;
     font-size: 20px;
+}
+.space-top {
+    margin-top: 10px;
+}
+.my-infor-in-this-tatus .show-more-option {
+    font-size: 20px;
+}
+.my-infor-in-this-tatus {
+    justify-content: space-between;
+}
+.my-name-and-time {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.container-time-status > .block-space {
+    line-height: 21.6px;
+}
+.container-time-status .container-my-name, a, i {
+    text-decoration: none;
+    color: white;
+}
+.container-time-status .container-my-name:hover, a:hover {
+    text-decoration: underline;
+}
+.my-infor-in-this-tatus .my-name-and-time .container-my-name{
+    font-weight: bold;
+}
+.container-input-status,
+.my-infor-in-this-tatus {
+    padding: 10px 0px;
+    margin: 0px 15px;
+}
+.content-status {
+    margin: 0px 15px;
+    padding-bottom: 10px;
+    
+}
+.content-status .text-content {
+    padding-bottom: 10px;
+}
+.content-status .image-content {
+    margin: 0px -15px;
+}
+.content-status .image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.follow-of-status .icon-followed div{
+    width: 18px;
+    height: 18px;
+}
+.follow-of-status .icon-followed img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.follow-of-status {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #565758;
+}
+.follow-of-status .count-comment {
+    min-width: 100px;
+    flex-grow: 1;
+    height: 100%;
+}
+.detail-follow-of-status {
+    flex-grow: 10;
+}
+.follow-of-status .icon-followed {
+    display: flex;
+    margin-right: 5px;
+}
+.function-in-status {
+    padding: 10px;
+}
+.style-option a {
+    display: flex;
+    text-decoration: none;
+    line-height: 19px;
+    height: 32px;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    
+}
+.style-option a:hover {
+    background: #434343;
+}
+.style-option  span {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 3px;
+    
+
+}
+.style-option  .love {
+    color: #f33e58;
+}
+.style-option  img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+.function-in-status {
+    display: flex;
+    justify-content: space-between;
 }
