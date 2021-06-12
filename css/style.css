@@ -710,7 +710,6 @@ h2 a:hover {
     font-size: 16px;
     font-weight: bold;
     padding-left: 3px;
-    
 
 }
 .style-option  .love {
@@ -724,4 +723,88 @@ h2 a:hover {
 .function-in-status {
     display: flex;
     justify-content: space-between;
+}
+.show-list-my-message {
+    position: absolute;
+    top: 53px;
+    right: 15px;
+    z-index: 100;
+    background: #242526;
+    height: 400px;
+    overflow-y: scroll;
+    width: 360px;
+    border: 1px solid #535353;
+    border-radius: 5px;
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #575757;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180);
+  }
+/**/
+.recent-list-message {
+    padding: 10px;
+}
+.recent-list-message .message-detail {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px;
+}
+.recent-list-message .message-detail:hover {
+    background-color: #2f3031;
+}
+.recent-list-message .message-detail:hover .more-option {
+    display: block;
+}
+.recent-list-message .message-detail .avt-of-my-friend {
+    width: 56px;
+    height: 56px;
+}
+.recent-list-message .message-detail .avt-of-my-friend img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name-of-my-friend-and-content {
+    position: relative;
+}
+.name-of-my-friend-and-content .more-option {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #424242;
+    box-shadow: 1px 1px 13px #222222,
+    inset 1px 1px 13px #222222;
+    line-height: 36px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    right: 15px;
+}
+
+.message-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-of-my-friend-and-content {
+    display: flex;
+}
+.content-message {
+    color :white;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+.basic-content {
+    padding-right: 8px;
+    width: 232px;
+}
+.showMessage {
+    display: block;
 }
